@@ -1,0 +1,15 @@
+{
+  "name": "ubuntu-theme",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:g105b/n1-ubuntu-theme.git"
+  },
+  "engines": {
+    "nylas": ">=0.4.10-4e3595b"
+  },
+  "description": "Simple Ubuntu theme for N1",
+  "dependencies": {},
+  "license": "MIT"
+}
