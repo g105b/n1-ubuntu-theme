@@ -55,3 +55,60 @@
 	}
 }
 
+.list-container {
+	.list-item {
+		background-color: #fff;
+
+		&.focused {
+			background-color: #f07746;
+			border-bottom-color: #d4673c;
+		}
+	}
+}
+
+.account-sidebar {
+	background-color: #e7e5e4;
+	border-right: 1px solid #bbb7b3;
+
+	.nylas-outline-view {
+		.item {
+			position: relative;
+			border-right: none;
+
+			&.selected {
+				background-color: #f07746;
+				color: white;
+
+				&::before {
+					content: "";
+					position: absolute;
+					z-index: -1;
+					display: block;
+					background-color: #f07746;
+					top: 0;
+					bottom: 0;
+					left: -100%;
+					width: 100%;
+				}
+
+				.content-mask {
+					background-color: white;
+				}
+
+				body.is-blurred & {
+					background-color: #c9c5c2;
+					color: #4c4c4c;
+
+					&::before {
+						background-color: #c9c5c2;
+					}
+
+					.content-mask {
+						background-color: #4c4c4c;
+					}
+				}
+			}
+		}
+	}
+
+}
