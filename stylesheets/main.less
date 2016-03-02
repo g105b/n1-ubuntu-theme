@@ -1,6 +1,42 @@
 @import "ui-variables";
 @import "ui-mixins";
 
-.my-package .btn {
-  
+.sheet-toolbar {
+	height: 56px;
+	max-height: 56px;
+
+	.sheet-toolbar-container {
+
+		background-image: -webkit-linear-gradient(
+			top,
+			#3b3a36,
+			#54524b);
+		box-shadow: inset 0 1px 0 #383734;
+
+		body.is-blurred & {
+			background-image: -webkit-linear-gradient(
+				top,
+				#3c3b37,
+				#3c3b37);
+			box-shadow: inset 0 1px 0 #3c3b37;
+		}
+	}
+
+	button.btn-toolbar {
+		height: 3em;
+		line-height: 1em;
+
+		background-image: -webkit-linear-gradient(
+			top,
+			#3d3c38,
+			#514f48);
+		box-shadow: inset 0 0 2px #55544e;
+		border: 1px solid #363632;
+		box-sizing: border-box;
+
+		img.content-mask {
+			background-color: #dfdbd2;
+		}
+	}
 }
+
